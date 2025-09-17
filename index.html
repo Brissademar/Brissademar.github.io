@@ -148,7 +148,7 @@
                 </div>
               </div>
             </div>
-           <!-- <div class="col">
+            <div class="col">
               <div class="card shadow-sm">
                 <img class="bd-placeholder-img card-img-top" src="" alt="">
                 <div class="card-body">
@@ -165,8 +165,8 @@
             </div>
           </div>
         </div>
-      </div> -->
-      <br>
+      </div> 
+     
       <!-- Carrusel Testimonios -->
        <div id="testimonios" class="testimonios container mt-5">
         <h2 class="pb-2 border-bottom">Testimonios</h2>
@@ -233,17 +233,31 @@
        <div class="contacto">
        <div id="contacto" class="px-4 py-5 my-5 text-center">
     <i class="bi bi-envelope-paper fs-1"></i>
-    <h1 class="display-5 fw-bold ">¡Contáctame!</h1>
+    <h1 class="display-5 fw-bold">¡Contáctame!</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">¡Contáctame y desarrollemos proyectos que abarquen el mundo de la programación!</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <a href="mailto:brissaidalyjaramillo@gmail.com?">
-        <button type="button" class="btn btn-outline-light btn-lg px-4">Invítame!</button></a>
-      </div>
+  <form action="https://formspree.io/f/mjkeqlea" method="POST" class="p-4 rounded" style="background: rgba(255,255,255,0.05); box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+        <div class="mb-3 text-start">
+          <label for="nombre" class="form-label fw-bold">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="Nombre" required>
+        </div>
+        <div class="mb-3 text-start">
+          <label for="email" class="form-label fw-bold">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" name="Email" required>
+        </div>
+        <div class="mb-3 text-start">
+          <label for="mensaje" class="form-label fw-bold">Mensaje</label>
+          <textarea class="form-control" id="mensaje" name="Mensaje" rows="4" required></textarea>
+        </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="submit" class="btn btn-outline-light btn-lg px-4">Enviar mensaje</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
       </main>
+       <!-- Fin contacto -->
       <!-- Footer -->
       <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
